@@ -8,7 +8,7 @@ before_install:
   - docker build -t aaron86/docker-101 .
 
 script:
-  - docker run -e CI=true aaron86/docker-101
+  - docker run -e CI=true aaron86/docker-101 npm run test
 
 deploy:
     provider: elasticbeanstalk
