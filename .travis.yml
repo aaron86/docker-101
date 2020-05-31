@@ -13,10 +13,10 @@ before_install:
 deploy:
     provider: elasticbeanstalk
     region: "ap-southeast-2"
-    app: "dockermark-2"
-    env: "Dockermark2-env"
+    app: "docker-101"
+    env: "Docker101-env"
     bucket_name: "elasticbeanstalk-ap-southeast-2-111244320075"
-    bucket_path: "dockermark-2"
+    bucket_path: "docker-101"
     on: 
         branch: master
     access_key_id: "$AWS_ACCESS_KEY"
